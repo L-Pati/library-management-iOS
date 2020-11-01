@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Admin View Controller-->
+        <scene sceneID="sLw-da-MjI">
+            <objects>
+                <viewController storyboardIdentifier="AdminViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aXH-8m-yFH" customClass="AdminViewController" customModule="LibraryManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gig-lB-yMp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WhZ-KT-v8y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaW-SA-UYQ">
+                                <rect key="frame" x="73" y="349" width="268" height="46"/>
+                                <color key="backgroundColor" red="0.63770812750000005" green="0.80686920880000002" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="7Lc-R6-iC9"/>
+                                    <constraint firstAttribute="height" constant="46" id="fzu-qt-7Tk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Manage Books">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="547-nq-qFe">
+                                <rect key="frame" x="73" y="426" width="268" height="46"/>
+                                <color key="backgroundColor" red="0.63770812750000005" green="0.80686920880000002" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="2Fj-Tq-7Ib"/>
+                                    <constraint firstAttribute="height" constant="46" id="764-pe-Tqi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Add Book">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i93-2X-22e" kind="presentation" id="CvD-AP-lQ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBI-w7-uEP">
+                                <rect key="frame" x="73" y="501" width="268" height="46"/>
+                                <color key="backgroundColor" red="0.63770812750000005" green="0.80686920880000002" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="9D6-dO-TBg"/>
+                                    <constraint firstAttribute="height" constant="46" id="LzK-Mo-2vE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ia2-kF-1Bs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UaW-SA-UYQ" firstAttribute="centerX" secondItem="Gig-lB-yMp" secondAttribute="centerX" id="DGp-B5-VgC"/>
+                            <constraint firstItem="Ia2-kF-1Bs" firstAttribute="bottom" secondItem="eBI-w7-uEP" secondAttribute="bottom" constant="315" id="NMt-3J-1pr"/>
+                            <constraint firstItem="UaW-SA-UYQ" firstAttribute="leading" secondItem="547-nq-qFe" secondAttribute="leading" id="Sjo-iB-gkT"/>
+                            <constraint firstItem="UaW-SA-UYQ" firstAttribute="top" secondItem="Ia2-kF-1Bs" secondAttribute="top" constant="305" id="TQ7-5A-BaY"/>
+                            <constraint firstItem="eBI-w7-uEP" firstAttribute="top" secondItem="547-nq-qFe" secondAttribute="bottom" constant="29" id="UhQ-dn-aXn"/>
+                            <constraint firstItem="547-nq-qFe" firstAttribute="leading" secondItem="eBI-w7-uEP" secondAttribute="leading" id="hzp-jZ-gGG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addBookButton" destination="547-nq-qFe" id="x8b-d9-aBb"/>
+                        <outlet property="logOut" destination="eBI-w7-uEP" id="UZa-V4-ZpN"/>
+                        <outlet property="manageBooks" destination="UaW-SA-UYQ" id="cCo-GS-3Hc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ky-Cz-Efu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="68.973214285714278"/>
+        </scene>
+        <!--AddBookViewController-->
+        <scene sceneID="U63-bU-MCH">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AddBookViewController" storyboardName="AddBookViewController" referencedIdentifier="AddBookViewController" id="i93-2X-22e" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUo-fv-lIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="-7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1615" height="2048"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

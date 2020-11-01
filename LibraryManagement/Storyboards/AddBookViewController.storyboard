@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Book View Controller-->
+        <scene sceneID="Tkv-Sc-n7Z">
+            <objects>
+                <viewController storyboardIdentifier="AddBookViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OIi-Fy-iuI" customClass="AddBookViewController" customModule="LibraryManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPP-xk-mXe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Author" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-n2-eiO">
+                                <rect key="frame" x="42" y="427" width="330" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Ji8-ke-9PU"/>
+                                    <constraint firstAttribute="width" constant="330" id="cOp-au-S2f"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lUu-YT-urL">
+                                <rect key="frame" x="42" y="392" width="330" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="0fJ-Vg-MzY"/>
+                                    <constraint firstAttribute="height" constant="34" id="NVC-2G-h9d"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-u3-uQQ">
+                                <rect key="frame" x="42" y="470" width="330" height="34"/>
+                                <color key="backgroundColor" red="0.63770812750000005" green="0.80686920880000002" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="XYc-5z-bzz"/>
+                                    <constraint firstAttribute="height" constant="34" id="gmB-gH-eCR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sb-mp-KaS">
+                                <rect key="frame" x="53" y="268" width="308" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="8OJ-EQ-Qgm"/>
+                                    <constraint firstAttribute="width" constant="308" id="sQw-4B-sRa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" red="0.63770812750000005" green="0.80686920880000002" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q5E-Fv-d46"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="lUu-YT-urL" firstAttribute="top" secondItem="7Sb-mp-KaS" secondAttribute="bottom" constant="65" id="0Ub-Vf-Uh3"/>
+                            <constraint firstItem="Wda-u3-uQQ" firstAttribute="top" secondItem="s4h-n2-eiO" secondAttribute="bottom" constant="9" id="2FS-X0-P8D"/>
+                            <constraint firstItem="Wda-u3-uQQ" firstAttribute="leading" secondItem="q5E-Fv-d46" secondAttribute="leading" constant="42" id="9sT-cT-hDz"/>
+                            <constraint firstItem="q5E-Fv-d46" firstAttribute="trailing" secondItem="Wda-u3-uQQ" secondAttribute="trailing" constant="42" id="Kxx-Ku-OqN"/>
+                            <constraint firstItem="s4h-n2-eiO" firstAttribute="top" secondItem="lUu-YT-urL" secondAttribute="bottom" constant="1" id="Oy8-Al-ofg"/>
+                            <constraint firstItem="Wda-u3-uQQ" firstAttribute="top" secondItem="s4h-n2-eiO" secondAttribute="bottom" constant="9" id="Ozj-mT-P2e"/>
+                            <constraint firstItem="s4h-n2-eiO" firstAttribute="top" secondItem="lUu-YT-urL" secondAttribute="bottom" constant="1" id="YCm-3J-5tq"/>
+                            <constraint firstItem="7Sb-mp-KaS" firstAttribute="centerX" secondItem="cPP-xk-mXe" secondAttribute="centerX" id="Zy0-dF-9xy"/>
+                            <constraint firstItem="q5E-Fv-d46" firstAttribute="trailing" secondItem="lUu-YT-urL" secondAttribute="trailing" constant="42" id="dDr-Bq-jOH"/>
+                            <constraint firstItem="lUu-YT-urL" firstAttribute="leading" secondItem="q5E-Fv-d46" secondAttribute="leading" constant="42" id="f07-lk-sWX"/>
+                            <constraint firstItem="s4h-n2-eiO" firstAttribute="leading" secondItem="q5E-Fv-d46" secondAttribute="leading" constant="42" id="oNd-PK-SQe"/>
+                            <constraint firstItem="q5E-Fv-d46" firstAttribute="trailing" secondItem="s4h-n2-eiO" secondAttribute="trailing" constant="42" id="pRs-qj-sJv"/>
+                            <constraint firstItem="7Sb-mp-KaS" firstAttribute="top" secondItem="q5E-Fv-d46" secondAttribute="top" constant="224" id="qrX-8o-cQT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="Wda-u3-uQQ" id="fQA-rI-Go7"/>
+                        <outlet property="authorField" destination="s4h-n2-eiO" id="lgW-BI-ZLS"/>
+                        <outlet property="titleField" destination="lUu-YT-urL" id="7Nu-Vz-rDf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boc-As-Uaj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
